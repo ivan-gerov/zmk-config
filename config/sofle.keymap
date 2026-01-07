@@ -37,11 +37,12 @@
         };
 
         // Custom behavior for External Power (OLED) Toggle Encoder
+        // Counter-Clockwise = OFF, Clockwise = ON
         ep_encoder: ep_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             label = "EP_ENCODER";
             #sensor-binding-cells = <0>;
-            bindings = <&ext_power EP_TOG>, <&ext_power EP_TOG>;
+            bindings = <&ext_power EP_OFF>, <&ext_power EP_ON>;
         };
     };
 
