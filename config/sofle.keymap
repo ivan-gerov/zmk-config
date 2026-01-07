@@ -27,6 +27,22 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+
+        // Custom behavior for RGB Brightness Encoder
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
+
+        // Custom behavior for External Power (OLED) Toggle Encoder
+        ep_encoder: ep_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "EP_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&ext_power EP_TOG>, <&ext_power EP_TOG>;
+        };
     };
 
     keymap {
@@ -106,7 +122,8 @@
             >;
 
             // Left Encoder: RGB Brightness  |  Right Encoder: Toggle External Power (Screens)
-            sensor-bindings = <&inc_dec_kp RGB_BRI RGB_BRD &inc_dec_kp EP_TOG EP_TOG>;
+            // Use the custom behaviors defined at the top
+            sensor-bindings = <&rgb_encoder &ep_encoder>;
         };
 
     };
