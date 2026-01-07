@@ -121,9 +121,8 @@
                               &none          &none           &none          &none           &none         &none                   &none                           &none          &none             &none
             >;
 
-            // Left Encoder: RGB Brightness  |  Right Encoder: Toggle External Power (Screens)
-            // Use the custom behaviors defined at the top
-            sensor-bindings = <&rgb_encoder &ep_encoder>;
+            // Left Encoder: Toggle External Power (Screens) | Right Encoder: RGB Brightness
+            sensor-bindings = <&ep_encoder &rgb_encoder>;
         };
 
     };
