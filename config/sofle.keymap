@@ -62,7 +62,7 @@
 &kp TAB        &kp Q          &kp W          &kp E           &kp R          &kp T                                      &kp Y      &kp U           &kp I           &kp O          &kp P             &kp BSPC
 &kp CLCK       &hm LGUI A     &hm LALT S     &hm LSHFT D     &hm LCTRL F    &kp G                                      &kp H      &hm RCTRL J     &hm RSHFT K     &hm LALT L     &hm RGUI SEMI     &kp SQT
 &kp GRAVE      &lt LAYER_1 Z  &kp X          &kp C           &kp V          &kp B           &kp C_MUTE    &none        &kp N      &kp M           &kp COMMA       &kp DOT        &lt LAYER_1 FSLH  &mt RSHFT RET
-                              &kp LGUI       &kp LALT        &kp LCTRL      &mo LAYER_1     &kp RET       &mt RCTRL ESC           &lt LAYER_2 SPACE               &kp RCTRL      &kp RALT          &mo LAYER_3
+                              &mo LAYER_3    &kp LALT        &mo LAYER_2    &kp LC(UP)      &kp RET       &mt RCTRL ESC           &lt LAYER_2 SPACE               &kp RCTRL      &kp RALT          &mo LAYER_3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
